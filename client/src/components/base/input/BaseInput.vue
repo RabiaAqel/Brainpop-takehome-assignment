@@ -1,8 +1,8 @@
 <template>
-  <div class="base-input">
-    <label v-if="label" class="base-input__label">{{ label }}:</label>
+  <div class="input_container">
+    <label v-if="label" class="label">{{ label }}:</label>
     <input 
-      class="base-input__field" 
+      class="input_field" 
       :value="modelValue" 
       :type="type" 
       :placeholder="placeholder" 
@@ -38,53 +38,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.base-input {
+@import '@/utilities/css/vars/vars.scss';
+
+.input_container {
   width: 100%;
+}
+.label {
+  font-family: $FONT_BOLD;
+  font-size: large;
+}
   
-  &__label {
-    display: block;
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-2);
-  }
-  
-  &__field {
-    width: 100%;
-    padding: var(--input-padding-y) var(--input-padding-x);
-    border: var(--input-border-width) solid var(--color-border);
-    border-radius: var(--radius-md);
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-normal);
-    color: var(--color-text-primary);
-    background-color: var(--color-background-white);
-    transition: all var(--transition-fast);
-    outline: none;
-    
-    &::placeholder {
-      color: var(--color-text-muted);
-    }
-    
-    &:focus {
-      border-color: var(--color-primary);
-      box-shadow: 0 0 0 var(--input-focus-ring-width) var(--input-focus-ring-color);
-    }
-    
-    &:hover:not(:focus) {
-      border-color: var(--color-secondary);
-    }
-    
-    // Error state (can be extended later)
-    &--error {
-      border-color: var(--color-danger);
-      
-      &:focus {
-        border-color: var(--color-danger);
-        box-shadow: 0 0 0 var(--input-focus-ring-width) rgb(239 68 68 / 0.2);
-      }
-    }
-  }
+.input_field {
+  width: 97%;
+  border: $BORDER;
+  border-radius: 6px;
+  font-size: 18px;
+  height: 34px;
+  outline: none;
+  padding-inline-start: 6px;
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $WHITE, 0 0 0 4px $BLUE_FOCUS;
+  }  
 }
 </style>
