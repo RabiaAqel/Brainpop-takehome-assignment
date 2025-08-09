@@ -1,0 +1,49 @@
+/* PROXIMANOVA */
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('webfonts/ProximaNova/2F3580_0_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_0_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_0_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_0_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond-Bold';
+  src: url('webfonts/ProximaNova/2F3580_1_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_1_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_1_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_1_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond-Semibold';
+  src: url('webfonts/ProximaNova/2F3580_2_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_2_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_2_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_2_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_2_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNovaExCn-Bold';
+  src: url('webfonts/ProximaNova/2F3580_3_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_3_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_3_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_3_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_3_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('webfonts/ProximaNova/2F3580_4_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_4_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_4_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_4_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_4_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('webfonts/ProximaNova/2F3580_5_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_5_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_5_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_5_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_5_0.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond-Regular';
+  src: url('webfonts/ProximaNova/2F3580_6_0.eot');
+  src: url('webfonts/ProximaNova/2F3580_6_0.eot?#iefix') format('embedded-opentype'), url('webfonts/ProximaNova/2F3580_6_0.woff2') format('woff2'), url('webfonts/ProximaNova/2F3580_6_0.woff') format('woff'), url('webfonts/ProximaNova/2F3580_6_0.ttf') format('truetype');
+  font-display: swap;
+}

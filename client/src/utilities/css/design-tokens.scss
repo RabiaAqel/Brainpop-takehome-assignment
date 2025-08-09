@@ -1,0 +1,138 @@
+// Design Tokens for Quiz Application
+// Based on provided design specifications
+
+:root {
+  // Color Tokens
+  --color-primary: #14b8a6; // Teal color to match design
+  --color-primary-hover: #0f766e; // Darker teal for hover
+  --color-primary-light: #ccfbf1; // Light teal for selected options
+  
+  // Separate hover border color (keep blue for option hover)
+  --color-hover-border: #3b82f6; // Blue for option hover borders
+  
+  --color-secondary: #6b7280;
+  --color-secondary-hover: #4b5563;
+  
+  --color-success: #10b981;
+  --color-success-light: #d1fae5;
+  
+  --color-danger: #ef4444;
+  --color-danger-light: #fee2e2;
+  
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+  
+  --color-background: #f8fafc;
+  --color-background-white: #ffffff;
+  --color-background-gray: #f1f5f9;
+  
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  
+  // Spacing Tokens (based on 4px grid)
+  --spacing-0: 0;
+  --spacing-1: 0.25rem; // 4px
+  --spacing-2: 0.5rem;  // 8px
+  --spacing-3: 0.75rem; // 12px
+  --spacing-4: 1rem;    // 16px
+  --spacing-5: 1.25rem; // 20px
+  --spacing-6: 1.5rem;  // 24px
+  --spacing-8: 2rem;    // 32px
+  --spacing-10: 2.5rem; // 40px
+  --spacing-12: 3rem;   // 48px
+  --spacing-16: 4rem;   // 64px
+  --spacing-20: 5rem;   // 80px
+  --spacing-24: 6rem;   // 96px
+  
+  // Typography Tokens
+  --font-family-primary: 'ProximaNova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+  
+  --font-size-xs: 0.75rem;   // 12px
+  --font-size-sm: 0.875rem;  // 14px
+  --font-size-base: 1rem;    // 16px
+  --font-size-lg: 1.125rem;  // 18px
+  --font-size-xl: 1.25rem;   // 20px
+  --font-size-2xl: 1.5rem;   // 24px
+  --font-size-3xl: 1.875rem; // 30px
+  --font-size-4xl: 2.25rem;  // 36px
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  // Border Radius Tokens
+  --radius-none: 0;
+  --radius-sm: 0.125rem;  // 2px
+  --radius-base: 0.25rem; // 4px
+  --radius-md: 0.375rem;  // 6px
+  --radius-lg: 0.5rem;    // 8px
+  --radius-xl: 0.75rem;   // 12px
+  --radius-2xl: 1rem;     // 16px
+  --radius-full: 9999px;
+  
+  // Shadow Tokens
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  // Transition Tokens
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+  
+  // Z-index Tokens
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  // Breakpoint Tokens (for JavaScript usage)
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+// Component-specific tokens
+:root {
+  // Button tokens
+  --btn-padding-x: var(--spacing-4);
+  --btn-padding-y: var(--spacing-2);
+  --btn-padding-x-sm: var(--spacing-3);
+  --btn-padding-y-sm: var(--spacing-1);
+  --btn-padding-x-lg: var(--spacing-6);
+  --btn-padding-y-lg: var(--spacing-3);
+  
+  // Input tokens
+  --input-padding-x: var(--spacing-3);
+  --input-padding-y: var(--spacing-2);
+  --input-border-width: 1px;
+  --input-focus-ring-width: 2px;
+  --input-focus-ring-color: rgb(20 184 166 / 0.5); // Teal focus ring
+  
+  // Card tokens
+  --card-padding: var(--spacing-6);
+  --card-border-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-base);
+  
+  // Quiz-specific tokens
+  --quiz-question-spacing: var(--spacing-8);
+  --quiz-option-spacing: var(--spacing-4);
+  --quiz-progress-height: 4px;
+} 

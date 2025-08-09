@@ -1,0 +1,28 @@
+@import '@/utilities/css/vars/vars.scss';
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: $FONT_BOLD;
+  margin: 0;
+}
+h2 {
+  font-size: 30px;
+  font-family: $FONT_BOLD;
+  margin: 0;
+}
+h3 {
+  font-size: 20px;
+  font-family: $FONT_BOLD;
+  margin: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
